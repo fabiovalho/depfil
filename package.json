@@ -1,0 +1,29 @@
+{
+  "name": "depfil",
+  "version": "1.0.0",
+  "description": "UFPE's philosophy department new website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+    "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fabiovalho/depfil.git"
+  },
+  "keywords": [
+    "departamento",
+    "filosofia",
+    "ufpe"
+  ],
+  "author": "Fabio TENORIO DE CARVALHO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiovalho/depfil/issues"
+  },
+  "homepage": "https://github.com/fabiovalho/depfil#readme"
+}
