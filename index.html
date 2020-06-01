@@ -1,57 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Required meta tags always come first -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <title>Departamento de Filosofia | UFPE</title>
+    <link rel="stylesheet" href="css_depfil/index.css"
+    <title>UFPE | Departamento de Filosofia </title>
 </head>
+
 <body>
-    <!-- pagina principal do Departamento -->
 
-    <div id="main-page">
+    <!--- pre-given header from UFPE and gouvernement -->
+    <header></header>
 
-        <!-- The header has the logo and the title at the up left of the viewport -->
+    <!-- header specific for the department -->
 
-        <header>
-            <div id="logo_depfil" class="container">
-                <div id="logo-ufpe" class="row">
-                    <img src="images/marca-ufpe_mini.png" alt="logomarca da UFPE">
-                    <div id="depfil-name">
-                        <h1>Departamento de Filosofia</h1>
-                    </div>
-                </div>
-                
-                <nav id="nav-bar" class="row">
-                    <ul class="col-md-12">
-                        <li>Cursos</li>
-                        <li>Pesquisa</li>
-                        <li>Extensão</li>
-                        <li>Corpo Docente</li>
-                        <li>Diretório Acadêmico</li>
-                        <li>Sobre o Departamento</li>
-                        <li>Notícias e eventos</li>
-                    </ul>
-                </nav>
+    <header class="jumbotron">
+        
+        <!-- the navbar configured to become a dropdown menu into a toogle in min size -->
+        <!-- the link for the tutorial I followed to do this https://www.youtube.com/watch?v=87ONyGaOlh4 -->
+        <!-- something still not working as supposed in sm -->
+        
+        <nav class="container navbar navbar-expand-md navbar-dark">
+            <div class="row">
+                <div class="col-10 l-auto"><h1>Departamento de <span>Filosofia</span></h1></div>
+                <button id="menu-button" class=" col-2 navbar-toggler" type="button" data-toogle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
 
-            <!-- the nav-bar comes at the bottom of the login and title. It spreads along the width -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Pesquisa</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://pt-br.facebook.com/nefipe/">Nefipe</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://conscienciaecognicaoufpe.wordpress.com/iv-ciclo-de-palestras-consciencia-e-cognicao/">Consciência e Cognição</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.facebook.com/grupodynamis/">Dynamis</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Fenomenologia e Hermenêutica</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Extensão</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Quem somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre o Departamento</a></li>
+                    <li class="nav-item"><a class="nav-link"href="#">Notícias e eventos</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
 
-        </header>
+    <main>
 
-        <section id="presentation" class="container">
-            <img src="images/ancient_computer_reduced.png">
+        <h1>Departamento de Filosofia</h1>
+
+        <p>Centro de Filosofia e Ciências Humanas</p>
+
+        <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+            <li id="carousel__slide1"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper">
+                <a href="#carousel__slide4"
+                class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2"
+                class="carousel__next">Go to next slide</a>
+            </div>
+            </li>
+            <li id="carousel__slide2"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1"
+                class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3"
+                class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide3"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2"
+                class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide4"
+                class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide4"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3"
+                class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1"
+                class="carousel__next">Go to first slide</a>
+            </li>
+        </ol>
+        <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide1"
+                class="carousel__navigation-button">Go to slide 1</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide2"
+                class="carousel__navigation-button">Go to slide 2</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide3"
+                class="carousel__navigation-button">Go to slide 3</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide4"
+                class="carousel__navigation-button">Go to slide 4</a>
+            </li>
+            </ol>
+        </aside>
         </section>
+               
+        <section id="infos" class="container">
 
-        <section id="events" class="container">
+            <div class="course row">
+                <h2>Graduação</h2>
+                <p>Por exemplo: pequeno trecho
+                    extraído do PPC
+                    a respeito do bacharelado
+                    e da licenciatura em Filosofia.</p>
+                <div>
+                    <button>Mais informações</button>
+                </div>
+            </div>
+
+            <div class="course row">
+                <h2>Pós-graduação</h2>
+                <p>Texto sobre a Pós-graduação acadêmica
+                    e sobre a pós-graduação profissionalizante</p>
+                <div>
+                    <button>Mais informações</button>
+                </div>
+            </div>
             
-            <div class="row">
+            <div class="news row">
                 <div id="event-list" class="col-12">
-                    <h2>Eventos</h2>
+                    <h2>Notícias</h2>
                     <div class="event-box">
                         <div class="event-date">
                             <p>20.05</p>
@@ -77,37 +175,45 @@
                         </div>
                     </div>
                 </div>
+            </div>
             
-                <div id="boxes">
-                    <div class="info-box col-4">
-                        <h2>Nossa história</h2>
-                        <div class="info-text">
-                            <p>O curso de Filosofia da UFPE nasceu da incorporação do curso de Filosofia da Faculdade do Recife à Universidade Federal de Pernambuco em mil novecentos e lá vai bolinha.</p>
-                        </div>
-                    </div>
-                    <div class="info-box col-4">
-                        <h2>Quem somos</h2>
-                        <div class="info-text">
-                            <p>Informações genéricas sobre o pessoal docente e técnico-administrativo atual. Quantas pessoas são? Qual o perfil de formação dessas pessoas? Outras informações pertinentes.</p>
-                        </div>
-                    </div>
-                    <div class="info-box col-4">
-                        <h2>Vida estudantil</h2>
-                        <div class="info-text">
-                            <p>Algo sobre as iniciativas dos estudantes, informações sobre a quantidade de ingressantes e egressos, sobre o D.A. e outras coisas.</p>
-                        </div>
-                    </div>
+            <div class="review row">
+                <h2>Perspectiva Filosófica</h2>
+                <p>Informações sobre a revista
+                    do Departamento de
+                    Filosofia da UFPE</p>
+                <div>
+                    <button>Mais informações</button>
                 </div>
-
+            </div>
+            
+            <div class="partners row">
+                <h2>Parcerias</h2>
+                <p>Texto curto sobre o objetivo e a importância dessas parcerias.</p>
+                <ul>
+                    <li><a>Pós-graduação em Direitos Humanos da UFPE</a></li>
+                    <li><a>Pós-graduação em Filosofia da UFAL</a></li>
+                    <li><a>Pós-graduação em Filosofia da UFRN</a></li>
+                    <li><a>Universidade de Buenos Aires</a></li>
+                    <li><A>Universidade of Miami</A></li>
+                </ul>
+            </div>
+            
+            <div class="works row">
+                <h2>Publicações</h2>
+                <p>Informações sobre os livros, artigos, capítulos ou mesmo vídeos e podcasts produzidos pelo corpo docente e discente </p>   
             </div>
                                                                        
         </section>
       
-    </div>
+    </main>
 
     <!-- make a footer here -->
     <footer>
-        
+        <div>
+            <h3>Contatos</h3>
+            <p></p>
+        </div>
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
