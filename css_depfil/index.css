@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background-color: #e6160f;
+    background-color:#CC2A49;
     padding-top: 10px;
 }
 
@@ -42,7 +42,7 @@ header h2 {
 /* credits go to @jenning at codepen */
 
 .menu {
-    background: #ff4640;
+    background: #EF4648;
     height: 4rem;
     z-index: 1;
   }
@@ -83,14 +83,14 @@ header h2 {
   }
   .menu-item a {
     overflow: visible;
-    white-space: nowrap;
+    white-space: wrap;
     text-overflow: ellipsis;
     display: block;
     color: #FFF;
   }
   .sub-menu .menu-item {
     padding: 0.75rem 0;
-    background: #F67280;
+    background: #F36F38;
     opacity: 0;
     transform-origin: bottom;
     animation: enter 0.2s ease forwards;
@@ -481,6 +481,7 @@ button {
   color: whitesmoke;
 }
 .event-title {
+  width: 500px;
   border-bottom: 1px solid lightgray;
 }
 
